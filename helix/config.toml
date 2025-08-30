@@ -1,0 +1,56 @@
+# theme = "modus_operandi"
+theme = "gruber-darker"
+
+[editor]
+color-modes = true
+gutters = ["line-numbers", "diagnostics"]
+line-number = "relative"
+trim-trailing-whitespace = true
+trim-final-newlines = true
+auto-completion = true
+completion-trigger-len = 3
+
+[editor.whitespace.render]
+space = "all"
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name", "file-modification-indicator"]
+right = ["diagnostics", "position", "file-encoding", "file-type", "version-control", "spacer"]
+
+[keys.insert]
+j = { k = "normal_mode" }
+"C-o" = "open_below"
+# "C-O" = "open_above"
+# "C-i" = "insert_at_line_start"
+# "C-a" = "insert_at_line_end"
+"C-h" = "signature_help"
+"C-e" = "kill_to_line_end"
+"C-s" = "kill_to_line_start"
+
+[keys.normal]
+"J" = "@5j"
+"K" = "@5k"
+"H" = "@5h"
+"L" = "@5l"
+"V" = "@xv"
+"C-s" = ":write"
+"C-a" = "@%"
+"X"= "extend_line_above"
+
+# tab = "move_parent_node_end"
+# S-tab = "move_parent_node_start"
+
+[keys.select]
+"J" = "@5j"
+"K" = "@5k"
+"H" = "@5h"
+"L" = "@5l"
+
+[editor.lsp]
+auto-signature-help = false
+[editor.cursor-shape]
+
+# insert = "underline"
+# normal = "block"
+
+insert = "bar"

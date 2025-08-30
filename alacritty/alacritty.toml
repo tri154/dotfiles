@@ -1,0 +1,56 @@
+# [window]
+
+# opacity = 0.9
+#
+# padding.x = 5
+# padding.y = 0
+#position.x = 600
+#position.y = 250
+
+# decorations = "None"
+#decorations_theme_variant = "Light" # "Dark"
+
+[font]
+
+# normal.family = "Hack"
+# bold.family = "Hack"
+# italic.family = "Hack"
+# bold_italic.family = "Hack"
+# size = 11.25
+
+# normal.family = "Iosevka Extended"
+# bold.family = "Iosevka Extended"
+# italic.family = "Iosevka Extended"
+# bold_italic.family = "Iosevka Extended"
+
+# normal.family = "Iosevka"
+# bold.family = "Iosevka"
+# italic.family = "Iosevka"
+# bold_italic.family = "Iosevka"
+# size = 12.8
+
+
+normal.family = "Iosevka Nerd Font Mono"
+bold.family = "Iosevka Nerd Font Mono"
+italic.family = "Iosevka Nerd Font Mono"
+bold_italic.family = "Iosevka Nerd Font Mono"
+size = 12.8
+
+# normal.family = "JetBrains Mono"
+# bold.family = "JetBrains Mono"
+# italic.family = "JetBrains Mono"
+# bold_italic.family = "JetBrains Mono"
+# size = 11.0
+
+
+# [cursor]
+# style.blinking = "Always"
+# blink_interval = 500
+
+# [keyboard]
+# bindings = [
+# { key = "c", mods = "Control", mode = "Vi", action="CopySelection"},
+# ]
+
+[colors]
+cursor = { text = "#000000", cursor = "#ffcc00" }

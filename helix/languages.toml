@@ -1,0 +1,25 @@
+[[language]]
+name = "python"
+language-servers = ["pylsp"]
+
+
+[language-server.pylsp.config.pylsp]
+plugins.pyls_mypy.enabled = true
+plugins.pyls_mypy.live_mode = true
+plugins.flake8.maxLineLength = 88
+plugins.pycodestyle.enabled = false
+# plugins.pycodestyle.maxLineLength = 88
+# plugins.pycodestyle.ignore = ["W293", "E302", "E303", "E305", "E501", "E261", "E701", "E262"]
+[language.formatter]
+command = "black"
+args = ["--line-length", "88", "--quiet", "-"]
+
+
+# [[language]]
+# name = "python"
+# language-servers = ["pyright"]
+
+# [language-server.pyright]
+# command = "pyright-langserver"
+# args = ["--stdio"]
+# config = {}
