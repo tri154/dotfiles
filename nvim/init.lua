@@ -226,6 +226,7 @@ vim.pack.add{
   { src = 'https://github.com/echasnovski/mini.pick' },
   { src = 'https://github.com/blazkowolf/gruber-darker.nvim' },
   { src = 'https://github.com/nvim-mini/mini.pairs' },
+  { src = 'https://github.com/Saghen/blink.cmp' },
 }
 
 -- require("gruber-darker").setup({
@@ -258,3 +259,37 @@ vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { noremap = true, silent = tru
 vim.keymap.set('n', 'gr', vim.lsp.buf.references, { noremap = true, silent = true })
 vim.keymap.set('i', '<C-k>', vim.lsp.buf.signature_help, { noremap = true, silent = true })
 require('mini.pairs').setup()
+
+require('blink.cmp').setup({
+  -- 'default' (recommended) for mappings similar to built-in completions (C-y to accept)
+  -- 'super-tab' for mappings similar to vscode (tab to accept)
+  -- 'enter' for enter to accept
+  -- 'none' for no mappings
+  --
+  -- All presets have the following mappings:
+  -- C-space: Open menu or open docs if already open
+  -- C-n/C-p or Up/Down: Select next/previous item
+  -- C-e: Hide menu
+  -- C-k: Toggle signature help (if signature.enabled = true)
+  --
+  -- See :h blink-cmp-config-keymap for defining your own keymap
+  keymap = {
+    preset = "super-tab",
+    ["<Tab>"] = { "select_next", "fallback" },
+    ["<S-Tab>"] = { "select_prev", "fallback" },
+  },
+  completion = {
+    accept = { auto_insert = true },
+    menu = { auto_show = true },
+  },
+
+  appearance = {
+    nerd_font_variant = 'mono'
+  },
+
+  -- (Default) Only show the documentation popup when manually triggered
+  completion = { documentation = { auto_show = false } },
+
+  fuzzy = { implementation = "lua" }
+})
+
