@@ -25,7 +25,7 @@ j = { k = "normal_mode" }
 # "C-a" = "insert_at_line_end"
 "C-h" = "signature_help"
 "C-e" = "kill_to_line_end"
-"C-s" = "kill_to_line_start"
+"C-q" = "kill_to_line_start"
 
 [keys.normal]
 "J" = "@5j"
@@ -36,6 +36,10 @@ j = { k = "normal_mode" }
 "C-s" = ":write"
 "C-a" = "@%"
 "X"= "extend_line_above"
+
+"C-e" = "kill_to_line_end"
+"C-q" = "kill_to_line_start"
+g = { "=" = "@ghf=;"}
 
 # tab = "move_parent_node_end"
 # S-tab = "move_parent_node_start"
