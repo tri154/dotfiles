@@ -39,7 +39,7 @@ j = { k = "normal_mode" }
 
 "C-e" = "kill_to_line_end"
 "C-q" = "kill_to_line_start"
-g = { "=" = "@ghf=;"}
+g = { u = "@ghf=;"}
 
 # tab = "move_parent_node_end"
 # S-tab = "move_parent_node_start"
