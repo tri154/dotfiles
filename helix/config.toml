@@ -26,6 +26,8 @@ j = { k = "normal_mode" }
 "C-h" = "signature_help"
 "C-e" = "kill_to_line_end"
 "C-q" = "kill_to_line_start"
+"C-[" = "@<esc>A{<ret>"
+"C-;" = "@<esc>A;<ret>"
 
 [keys.normal]
 "J" = "@5j"
@@ -39,6 +41,7 @@ j = { k = "normal_mode" }
 
 "C-e" = "kill_to_line_end"
 "C-q" = "kill_to_line_start"
+"C-h" = "signature_help"
 g = { u = "@ghf=;"}
 
 # tab = "move_parent_node_end"
